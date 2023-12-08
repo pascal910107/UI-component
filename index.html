@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="/dist/output.css" rel="stylesheet">
+    <link href="/components/t.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="flex justify-center items-center h-screen bg-black">
-        <div id="purpleCard"></div>
+    <div class="flex justify-center items-center gap-x-8 h-screen bg-black">
+        <!-- <div id="purpleCard"></div> -->
+        <div id="coolCard"></div>
+        <!-- <div class="purpleCard"></div> -->
     </div>
 
     <script>
         $(() => {
             $('#purpleCard').load('./components/purpleCard.html');
+            $('#coolCard').load('./components/coolCard.html');
+            // $('.purpleCard').each(function() {
+            //     $(this).load('./components/purpleCard.html');
+            // });
         });
     </script>
 </body>
