@@ -5,24 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="/dist/output.css" rel="stylesheet">
-    <link href="/components/t.css" rel="stylesheet">
+    <!-- <link href="/src/hello.css" rel="stylesheet"> -->
+    <!-- <link href="/src/chargeLine.css" rel="stylesheet"> -->
+    <link href="/src/coolCard.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="flex justify-center items-center gap-x-8 h-screen bg-black">
-        <!-- <div id="purpleCard"></div> -->
-        <div id="coolCard"></div>
-        <!-- <div class="purpleCard"></div> -->
-    </div>
+    <!-- 1. -->
+    <!-- <div class="flex justify-center items-center gap-x-8 h-screen bg-black">
+        <div id="purpleCard"></div>
+    </div> -->
+    <!-- 2. -->
+    <!-- <div id="hello"></div> -->
+    <!-- 3. -->
+    <!-- <div id="chargeLine"></div> -->
+    <!-- 4. -->
+    <div id="coolCard"></div>
 
     <script>
         $(() => {
             $('#purpleCard').load('./components/purpleCard.html');
+            $('#hello').load('./components/hello.html');
+            $('#chargeLine').load('./components/chargeLine.html');
             $('#coolCard').load('./components/coolCard.html');
             // $('.purpleCard').each(function() {
             //     $(this).load('./components/purpleCard.html');
             // });
         });
     </script>
+    <!-- <script src="src/hello.js"></script> -->
+    <!-- <script src="src/chargeLine.js"></script> -->
+    <script src="src/coolCard.js"></script>
 </body>
 </html>
